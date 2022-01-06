@@ -20,6 +20,7 @@ import AuthProvider from './context/AuthProvider/AuthProvider';
 import RequireAuth from './context/RequireAuth/RequireAuth';
 import Cart from './Pages/Cart/Cart';
 import OrderComplete from './Pages/OrderComplete/OrderComplete';
+import AddProduct from './components/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<Home />} />
           <Route path="/contact" element={<Home />} />
+          <Route path="/addproduct" element={<AddProduct/>} />
           <Route path="/singleproductdetails/:id" element={<SingleProductDetails />} />
           <Route path="/ordercomplete" element={<OrderComplete />} />
           <Route path="*" element={<NotFound />} />
